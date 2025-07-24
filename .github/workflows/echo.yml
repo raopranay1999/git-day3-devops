@@ -1,0 +1,14 @@
+name: CI Test
+
+on: [push]
+
+jobs:
+  echo_job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v3
+
+      - name: Say Hello
+        run: echo "CI/CD working!"
+
